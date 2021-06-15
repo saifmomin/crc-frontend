@@ -1,0 +1,41 @@
+# This is a workflow to upload website to S3 and invalidate Cloudfront 
+
+name: Website 
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      AWS_S3_BUCKET_NAME: s3://saifmomin.net
+      AWS_CF_DISTRIBUTION_ID: your-cloudfront-id
+
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ap-south-1
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+        
+      - name: Upload website to S3
+        run: echo Hello, world!
+        env:
+          AWS_S3_BUCKET: ${{ env.AWS_S3_BUCKET_NAME }}
+        run: aws s3 sync ./public/ AWS_S3_BUCKET --delete
+        
+      - name: Invalidate CloudFront Cache
+        run: echo Hello, world!
+        env:
+          AWS_CF_DISTRIBUTION_ID: your-cloudfront-id
+
+  
