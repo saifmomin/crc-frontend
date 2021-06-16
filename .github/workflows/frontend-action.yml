@@ -24,10 +24,10 @@ jobs:
           aws-region: ap-south-1
         
       - name: Upload website to S3
-        run: echo Hello, world!
+        #run: echo Hello, world!
         env:
           AWS_S3_BUCKET: ${{ env.AWS_S3_BUCKET_NAME }}
-        #run: aws s3 sync ./public/ AWS_S3_BUCKET --delete
+        run: aws2 s3 sync ./website/ AWS_S3_BUCKET --delete
         
       - name: Invalidate CloudFront Cache
         run: echo Hello, world!
