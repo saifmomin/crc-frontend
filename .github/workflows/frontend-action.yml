@@ -9,9 +9,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    env:
-      AWS_S3_BUCKET_NAME: s3://saifmomin.net
-      AWS_CF_DISTRIBUTION_ID: your-cloudfront-id
 
     steps:
       - uses: actions/checkout@v2
@@ -24,14 +21,9 @@ jobs:
           aws-region: ap-south-1
         
       - name: Upload website to S3
-        #run: echo Hello, world!
-        env:
-          AWS_S3_BUCKET: ${{ env.AWS_S3_BUCKET_NAME }}
         run: aws s3 sync ./website/ s3://saifmomin.net --delete
         
       - name: Invalidate CloudFront Cache
-        run: echo Hello, world!
-        env:
-          AWS_CF_DISTRIBUTION_ID: your-cloudfront-id
+        run: aws cloudfront create-invalidation --distribution-id E3LH8MHBYUY45X --paths "/*"
 
   
