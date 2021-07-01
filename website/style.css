@@ -1,124 +1,336 @@
-
 * {
   box-sizing: border-box;
 }
 
+/* Style the body */
 body {
-	//margin: 0;
-
-}
-a:hover, a:active {
-  color: white;
+  font-family: Arial;
+  margin: 0;
 }
 
-.main {
-  float: left;
-  width: 60%;
-  padding: 0 20px;
+/* Header/logo Title */
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 auto;
+  margin: 0 auto;
+  //text-align: center;
+  //color: white;
+  font-size: auto;
+   //float: right;
+   //display: flex;
+  //flex-wrap: wrap;
+}
+
+
+/* Footer */
+.footer {
+  padding: 0 auto;
+  margin: 0 auto;
+  text-align: center;
+  //color: white;
+  font-size: auto;
+ //float: left;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.aside {
+  flex: 30%;
+  //background-color: #ececec;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Card layout */
+.card{
+  margin: auto;
+  text-align: center;
+  position: relative;
+  max-width:300px;
+  border-radius: 16px;
   overflow: hidden;
-  text-align: justify;
-
-  //display: flex;
-   flex-grow: 1;
-
-  line-height: 1.6;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.6);
+  transition: 0.5s;
+   //cursor: pointer;
+  //height: auto;
 }
 
-
-.right {
-  background-color: lightblue;
-  float: left;
-  width: 20%;
-  padding: 10px 15px;
-  margin-top: 7px;
-  word-wrap: break-word;
-
-  //flex-shrink: 0;
-
-  line-height: 1.6;
-
+.title {
+  color: grey;
+  font-size: 18px;
 }
 
-.menu {
-  float: left;
-  width: 20%;
-  //display: flex;
-}
-
-.menuitem {
+button {
+  border: none;
+ outline: 0;
+  display: inline-block;
   padding: 8px;
-  margin-top: 7px;
-  //border-bottom: 1px solid #f1f1f1;
-}
-
-/*menu a {
-  background-color: #eee;
-  color: black;
-  display: block;
-  padding: 12px;
-  text-decoration: none;
-}
-
-.menu a:hover {
-  background-color: #ccc;
-}
-
-.menu a.active {
-  background-color: #04AA6D;
   color: white;
-}*/
-
-header {
-     margin: 0;
-     color: #333;
-     text-align: center;
-     padding: 2.5em 2em 0;
-     border-bottom: 1px solid #eee;
- }
-    header h1 {
-        margin: 0.2em 0;
-        font-size: 3em;
-        font-weight: 300;
-    }
-     header h2 {
-        font-weight: 300;
-        color: #ccc;
-        padding: 0;
-        margin-top: 0;
-    }
-
-footer {
-background-color:#f1f1f1;
-text-align:center;
-padding:10px;
-margin-top:7px;
-font-size:12px;"
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  //position: relative;
+  //right:    0;
+ //bottom:   0;
 }
 
-/*@media only screen and (max-width:800px) {*/
-  /* For tablets: */
-  /*.main {
-    width: 80%;
-    padding: 0;
-  }
-  .right {
-    width: 100%;
-  }
-}*/
+button:hover, a:hover {
+  opacity: 0.7;
+}
 
-@media only screen and (max-width:620px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  text-align: justify;
+}
+
+/* Skill Bar */
+.skill-box {
+  width: 80%;
+  height: 1vh;
+  background-color: #ddd;
+}
+
+.skills {
+height: 1vh;
+  text-align: right;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: white;
+}
+
+.sol {width: 80%; background-color: #2196F3;}
+.aws {width: 70%; background-color: #2196F3;}
+.web {width: 60%; background-color: #2196F3;}
+.auto {width: 50%; background-color: #2196F3;}
+.java {width: 60%; background-color: #2196F3;}
+
+/* Section Counter */
+
+/* Style the counter cards */
+.counter-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: center;
+  background-color: #5da2d5;
+  color: white;
+}
+
+.counter-row {
+	margin: 0;
+}
+
+/* Float four columns side by side */
+.counter-column {
+  float: left;
+  width: 25%;
+  padding: 10px 5px;
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media only screen and (max-width: 700px) {
+ 	 .row {
+    		flex-direction: column;
+  	}
+	.header {
+		  display: flex;
+ 		 justify-content: center;
+	}
+}
+
+/****timeline****/
+
+.section-header, .steps-header, .steps-name {
+  //color: #3498DB;
+  //font-weight: 400;
+ // font-size: 1.4em;
+}
+
+.steps-timeline {
+  outline: 1px dashed rgba(255, 0, 0, 0);
+}
+@media screen and (max-width: 700px) {
+  .steps-timeline {
+    border-left: 2px solid #3498DB;
+    margin-left: 25px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .steps-timeline {
+    border-top: 2px solid #3498DB;
+    padding-top: 20px;
+    margin-top: 40px;
+    margin-left: 16.65%;
+    margin-right: 16.65%;
+  }
+}
+.steps-timeline:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.steps-one,
+.steps-two,
+.steps-three {
+  outline: 1px dashed rgba(0, 128, 0, 0);
+}
+@media screen and (max-width: 700px) {
+  .steps-one,
+  .steps-two,
+  .steps-three {
+    margin-left: -25px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .steps-one,
+  .steps-two,
+  .steps-three {
+    float: left;
+    width: 33%;
+    margin-top: -50px;
   }
 }
 
-/* Use a media query to add a break point at 800px: */
-@media screen and (max-width: 800px) {
-  .menu, .main, .right {
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+@media screen and (max-width: 700px) {
+  .steps-one,
+  .steps-two {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .steps-one {
+    margin-left: -16.65%;
+    margin-right: 16.65%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .steps-three {
+    margin-bottom: -100%;
+  }
+}
+@media screen and (min-width: 700px) {
+  .steps-three {
+    margin-left: 16.65%;
+    margin-right: -16.65%;
+  }
+}
+
+.steps-img {
+  display: block;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 700px) {
+  .steps-img {
+    float: left;
+    margin-right: 20px;
+  }
+}
+
+.steps-name,
+.steps-description {
+  margin: 0;
+}
+
+@media screen and (min-width: 700px) {
+  .steps-name {
+    text-align: center;
+    padding:10px;
+    margin: 2px;
+  }
+}
+
+.steps-description {
+  overflow: hidden;
+}
+@media screen and (min-width: 700px) {
+  .steps-description {
+   text-align: center;
   }
 }
 
 
+/****overlay****/
 
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  //background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  //overflow-y: hidden;
+  overflow-y: auto;
+  transition: 0.5s;
+
+
+}
+
+.overlay-content {
+  position: relative;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+
+}
+
+.overlay p {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 24px;
+  //color: #818181;
+  color: white;
+  //display: block;
+  transition: 0.3s;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #818181;
+  //display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}

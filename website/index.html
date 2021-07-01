@@ -1,108 +1,244 @@
 <!DOCTYPE html>
+<html>
 <head>
+<title>Resume Website</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset = "UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="font-family:Verdana; ">
+<body>
 
-<header>
-  <h1 style="font-size:5vw;">The Cloud Cult(ure)</h1>
-  <h2 style="font-size:3vw;">This is my page on the Cloud</h2>
+<!-- Header -->
+<header class="header" id="section1">
+<span style="float: right; font-size:30px;cursor:pointer; padding:5px" onclick="openNav()">&#9776;</span>
+<h1>&shy;</h1>
 </header>
 
-<div style="overflow:auto" >
+<!-- The flexible grid (content) -->
+<div class="row">
 
-  <div class="menu">
-      <div class="menuitem"></div>
+
+<aside class="aside">
+  <div class="side"  style="position: relative;">
+ <span>&shy;</span>
+
+     <div class="card">
+  <img src="images/img.jpg" alt="saif" style="width:100%; ">
+  <h2>Saif Momin</h2>
+  <p class="title">Solutions Architect</p>
+  <p>India</p>
+  <span>&shy;</span>
+
+ <div style="margin: 24px 0;">
+<td>
+
+<a href="mailto:saifmomin21@gmail.com" target="_blank" style="color: black"><i class="fa fa-envelope" style="font-size:24px"></i></a>
+
+<a href="https://github.com/saifmomin/" target="_blank" style="padding-left:20px; color: black"><i class="fa fa-github" style="font-size:24px"></i></a>
+
+<a href="https://www.linkedin.com/in/saif-momin-66610818" target="_blank" style="padding-left:20px; color: black">
+<i class="fa fa-linkedin-square" style="font-size:24px"></i></a>
+
+<a href="https://twitter.com/cldytweets/" target="_blank" style="padding-left:20px; color: black"><i class="fa fa-twitter" style="font-size:24px"></i></a>
+</div>
+
+<!-- <a href="mailto:saifmomin21@gmail.com"> <p><button>Mail</button></p></a> -->
+</div>
+<td>
   </div>
+</aside>
 
   <div class="main">
+  <section class="entry">
+<h2>About</h2>
+        <article>
+        <p><i class="fa fa-quote-left fa-2x fa-pull-left fa-border"></i> Solutions Architect helping customer with their Cloud and Digital journey. Known for a strong work ethic and professional demeanor, exceptional interpersonal skills, effective communication and the capacity to adapt quickly to new environments. Being a Solutions Architect, tend to act as a trusted advisor to stakeholders helping them create well-architected solutions. A Cloud enthusiast - mainly the AWS cloud! </p>
+  	 <hr style="border: 1px solid lightblue;">
+     </article>
+     </section>
+     <br>
+     <section class="counter">
+     <article>
+     <div class="counter-row">
+  	 <div class="counter-column">
+     <div class="counter-card">
+     <p><i class="fa fa-id-badge" style="font-size:24px"></i></p>
+     <h3>18+</h3>
+     <p>Experience</p>
+     </div>
+     </div>
+     <div class="counter-column">
+     <div class="counter-card">
+     <p><i class="fa fa-check" style="font-size:24px"></i></p>
+     <h3>15+</h3>
+     <p>Projects</p>
+     </div>
+     </div>
+     <div class="counter-column">
+     <div class="counter-card">
+     <p><i class="fa fa-certificate" style="font-size:24px"></i></p>
+     <h3>4 x</h3>
+     <p>AWS</p>
+     </div>
+     </div>
+     <div class="counter-column">
+     <div class="counter-card">
+     <p><i class="fa fa-smile-o" style="font-size:24px"></i></p>
+     <h3>1000+</h3>
+     <p>Meetings</p>
+     </div>
+     </div>
+     </div>
+     </article>
+     </section>
+     <br>
+     <section class="Placeholder">
+     <article>
+     <div>&shy;</div>
+     </article>
+     </section>
+     <br>
+     <section class="Education">
+     <h2>Education</h2>
+     <article>
+     <p>Bachelor of Engineering . Computer</p>
+     </article>
+     </section>
+     <br>
+     <section class="Experience">
+     <h2>Career</h2>
+     <article>
+<!-- STEPS -->
+  <section id="Steps" class="steps-section">
 
-    <h2 >Saif Momin</h2>
-    <h4 style="color:blue;">Solutions Architect</h4>
+    <div class="steps-timeline">
+      <div class="steps-one">
+        <img class="steps-img" src="images/timeline.jpg" alt="" />
+        <h4 class="steps-name">
+          TATA Consultancy Services
+        </h4>
+        <p class="steps-description">
+          Solution Architect<br>2005 - Current
+        </p>
+      </div>
+
+      <div class="steps-two">
+
+      </div>
 
 
-    <hr />
-
-    <p ><b>About</b></p>
-
-    <p>Solutions Architect helping customer with their Cloud and Digital journey. Known for a strong work ethic and professional demeanor, exceptional interpersonal skills, effective communication and the capacity to adapt quickly to new environments.</p>
-
-<p class="head"><b>Education</b></p>
-  <ul>
-      <li>B.E. Computer</li>
-    </a>
-  </ul>
-
-<p class="head"><b>Experience</b></p>
-    <p style="color: skyblue"><b>TATA Concultancy Services</b> </p>
-    <p>Solutions Architect <br> 2005 - till date . Full-time</p>
-
-    <p style="color: skyblue"><b>Infosys</b></p>
-    <p>Software Engineer <br> 2004 - 2005 . Full-time</p>
+      <div class="steps-three">
+        <img class="steps-img" src="images/timeline.jpg" alt="" />
+        <h4 class="steps-name">
+          Infosys
+        </h4>
+        <p class="steps-description">
+          Software Engineer<br>2004 -2005
+      </p>
+      </div>
 
 
-<p class="head"><b>Certifications</b></p>
-    <ul>
-    <li>AWS Certified Security - Speciality</li>
-    <li>AWS Certified SysOps Administrator - Associate</li>
-    <li>AWS Certified Developer - Associate</li>
-    <li>AWS Certified Solution Architect - Associate</li>
-  </ul>
+    </div><!-- /.steps-timeline -->
 
-<p class="head"><b>Skills & Endorsements</b></p>
-  <ul>
-    <li>AWS Cloud, 12 Factor Apps, Multi-tenat SaaS, Serverless</li>
-    <li>Microservices, DDD, Spring Cloud Netflix</li>
-    <li>APIs, REST , GraphQL</li>
-    <li>Java 8 , SpringBoot, Docker</li>
-    <li>Modern Data Platforms, Hadoop</li>
-    <li>LinkedIn Skill Assessment badge - AWS</li>
-  </ul>
+     </article>
+     </section>
+     <br>
+     <section class="Certifications">
+     <h2>Certifications</h2>
+     <article>
+     <ul class="fa-ul">
+     <li><i class="fa-li fa fa-square"></i>AWS Certified Security - Speciality</li>
+     <li><i class="fa-li fa fa-square"></i>AWS Certified SysOps Administrator - Associate</li>
+     <li><i class="fa-li fa fa-square"></i>AWS Certified Developer - Associate</li>
+     <li><i class="fa-li fa fa-square"></i>AWS Certified Solution Architect - Associate</li>
+	</ul>
+    </article>
+    </section>
+    <br>
+    <section class="Skills">
+    <h2>Skills</h2>
+     <article>
+     <p>Solution Architecture</p>
+	 <div class="skill-box">
+  	 <div class="skills sol"><span>&shy;</span></div>
+	 </div>
+     <p>AWS Cloud</p>
+     <div class="skill-box">
+     <div class="skills aws"><span>&shy;</span></div>
+     </div>
+     <p>Automation</p>
+     <div class="skill-box">
+     <div class="skills auto"><span>&shy;</span></div>
+     </div>
+     <p>Modern Web</p>
+     <div class="skill-box">
+     <div class="skills web"><span>&shy;</span></div>
+     </div>
+     <p>Java</p>
+     <div class="skill-box">
+     <div class="skills java"><span>&shy;</span></div>
+     </div>
+    </article>
+    </section>
+    <br>
+    <section class="Technologies">
+    <h2>Technologies</h2>
+    <article>
+    <ul class="fa-ul">
+    <li><i class="fa-li fa fa-square"></i>AWS, 12 Factor Apps, Multi-tenat SaaS, Serverless</li>
+     <li><i class="fa-li fa fa-square"></i>Microservices, DDD, Spring Cloud Netflix</li>
+     <li><i class="fa-li fa fa-square"></i>APIs, REST , GraphQL</li>
+     <li><i class="fa-li fa fa-square"></i>Java 8 , SpringBoot, Docker</li>
+     <li><i class="fa-li fa fa-square"></i>Modern Data Platforms, Hadoop</li>
+	</ul>
+    </article>
+    </section>
+    <br>
+    <section class="Projects">
+    <h2>Projects</h2>
+    <article>
+    <ul class="fa-ul">
+    <li><i class="fa-li fa fa-square"></i><strong>ePayment Platform:</strong> An ePayment gateway with Messaging Hub. An ePayment gateway with Messaging Hub. An ePayment gateway with Messaging Hub. An ePayment gateway with Messaging Hub. An ePayment gateway with Messaging Hub. An ePayment gateway with Messaging Hub.</li>
+     <li><i class="fa-li fa fa-square"></i><strong>Payroll Management System:</strong> A SaaS payroll application. A SaaS payroll application. A SaaS payroll application. A SaaS payroll application. A SaaS payroll application. A SaaS payroll application.  </li>
+     <li><i class="fa-li fa fa-square"></i><strong> Global Loyalty Program:</strong> API-fication of loyal platform using Microservices.API-fication of loyal platform using Microservices. API-fication of loyal platform using Microservices. API-fication of loyal platform using Microservices.  </li>
+     <li><i class="fa-li fa fa-square"></i><strong>Flight & Crew Operations:</strong> A Cloud-First design. A Cloud-First design. A Cloud-First design. A Cloud-First design. A Cloud-First design. A Cloud-First design. A Cloud-First design.  </li>
+	</ul>
+    </article>
+    </section>
+    <br>
+    <section class="Honors">
+    <h2>Honors</h2>
+    <article>
+    <ul class="fa-ul">
+    <li><i class="fa-li fa fa-square"></i><strong>White Paper:</strong> Taking PLM to the Cloud, PDT Europe, Paris, 2009.</li></ul>
+    </article>
+    </section>
 
-<p class="head"><b>Honors</b></p>
-  <ul>
-    <li>Presented Paper on "Taking PLM to Cloud" at PDT Euorpe Paris 2009</li>
-  </ul>
+  </div>  <!-- The main div-->
 
-<p class="head"><b>Key Projects</b></p>
-  <ul>
-    <li>ePayment Gateway and Notification Centre - ePayment platform with Messaging Hub</li>
-    <li>Payroll Management System - A SaaS payroll application</li>
-    <li>Flight & Crew Operations - Cloud-First design</li>
-    <li>Global Loyalty Program - API-fication of loyal platform using Microservices</li>
-  </ul>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
 
+ <p>Good Day !</p>
+ <p><span><a id="date"></a></span></p>
+<p>This website is a product of my stint with the AWS Cloud while making an attemp to the <a href="https://cloudresumechallenge.dev/" target=_"blank" style="text-decoration: none";>Cloud Resume Challenge</a><br>You can read all about the experience <a href="https://dev.to/"  target=_"blank" style="text-decoration: none";>here!</a></p>
+ <p>The web site is Responsive by Design. You may resize the browser window and witness the fluidity.
+<p> The web site is also highly <span> <a href="https://developers.google.com/speed/pagespeed/insights/?url=saifmomin.net"  target=_"blank" style="text-decoration: none;">performant</a></span></p></p>
+ <p class="visitor">You're guest # <a id="visitor_count"></a></p>
 
-
-  </div> <!-- main div -->
-
-
-
-    <aside class="right">
-        <h2>Featured</h2>
-    <p>White Paper on "Taking PLM to Cloud", PDT Euorpe, Paris, 2009.</p>
-    <p>AWS 4x Certified.</p>
-
-    <h2>Contact</h2>
-
-
-     <p><a style="text-decoration: none;" href="mailto:saifmomin21@gmail.com">Send Email</a></p>
-
-     <p><a style="text-decoration: none;" href="https://www.linkedin.com/in/saif-momin-66610818" target="_blank">LinkedIn</a></p>
-
-   </aside>
+  </div>
+</div>
 
 
 
-</div> <!-- overflow div -->
+</div> <!-- The flexible grid (row) -->
 
-<img src="images/img1.jpg" style="width:100%"; "height:auto"; border="0">
-
-<footer>
-<p>This web page is Responsive by Design. Resize the browser window to see the content respond to the resizing.<p id="visitor_count"></p>
+<!-- Footer -->
+ <footer class="footer" id="section2">
+  <p>&copy saifmomin 2021 </p>
 </footer>
 
 <script src="script.js"></script>
