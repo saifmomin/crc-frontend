@@ -118,26 +118,25 @@ height: 1vh;
 
 /* Section Counter */
 
-/* Style the counter cards */
 .counter-card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 10px;
+  display: flex;
+  flex-direction: row;
   text-align: center;
-  background-color: #5da2d5;
-  color: white;
 }
 
-.counter-row {
-	margin: 0;
+.counter-left {
+  background-color: #f1f1f1;
+  padding: 20px; margin: 10px;
+  flex: 50%;
+    text-align: center;
 }
 
-/* Float four columns side by side */
-.counter-column {
-  float: left;
-  width: 25%;
-  padding: 10px 5px;
+.counter-right {
+  background-color: dodgerblue;
+  padding: 20px; margin: 10px;
+  flex: 50%;
+    text-align: center;
 }
-
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media only screen and (max-width: 700px) {
@@ -147,6 +146,10 @@ height: 1vh;
 	.header {
 		  display: flex;
  		 justify-content: center;
+	}
+	.counter-card {
+		display: flex;
+		flex-direction: column;
 	}
 }
 
@@ -334,3 +337,5 @@ height: 1vh;
   right: 35px;
   }
 }
+
+.Education {margin-top : 30px;}
