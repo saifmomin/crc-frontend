@@ -46,7 +46,7 @@ document.getElementById("visitor_count").innerHTML = event.data;
  // alert(" posting msg to worker");
  console.log("posting msg to worker.js");
 
-apiUri=' https://nqzivwsyvi.execute-api.ap-south-1.amazonaws.com/Stage/visits';
+apiUri='https://7l2enkiaj0.execute-api.ap-south-1.amazonaws.com/Stage/visits';
 worker.postMessage(apiUri);
 
 
