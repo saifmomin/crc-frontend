@@ -1,2 +1,2 @@
 # rc-frontend
-A Frontend repo for Cloud Resume Challenge.
+A frontend repo for Cloud Resume Challenge.
